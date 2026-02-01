@@ -7,29 +7,33 @@ package Product;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Product
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Product
-     */
-    public Product()
-    {
-        // initialise instance variables
-        x = 0;
+public class Product{
+    private String productCode;
+    private String productName;
+    private String category;
+    private double unitPrice;
+    private int quantityInStock;
+    private int reorderLevel;
+    
+    public Product(){
+        this.productCode = "001";
+        this.productName = "Mango";
+        this.category = "Fruits";
+        this.unitPrice = 1500.00;
+        this.quantityInStock = 5;
+        this.reorderLevel = 4;
+        
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public Product(String productCode,String productName,String category,double unitPrice,int quantityInStock,int reorderLevel){
+        this.productCode = productCode;
+        this.productName = productName;
+        this.category = category;
+        this.unitPrice = unitPrice;
+        this.quantityInStock = quantityInStock;
+        this.reorderLevel = reorderLevel;
+        
+        
     }
+    
+    
 }
