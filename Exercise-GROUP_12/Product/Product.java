@@ -126,4 +126,28 @@ public class Product{
         System.out.println("=== Reorder Needed:  ===" +(needsReorder() ? "YES" : "NO"));
         System.out.println("=====================================================");
     }
+    
+public class ProductTest{
+    public static void main(String [] args){
+        Product Mango = new Product("001", "Mango", "Fruits", 1500.00, 10, 15);
+        Mango.displayProductInfo();
+        
+        System.out.println();
+        
+        Mango.addStock(5);
+        Mango.sellProduct(12);
+        Mango.applyDiscount(10);
+        
+        System.out.println();
+        Mango.displayProductInfo();
+        
+        System.out.println();
+        
+        Product Apple = new Product();
+        Apple.setunitPrice(24.39);
+        Apple.setquantityInStock(8);
+        Apple.displayProductInfo();
+        
+    }
+}
 }
