@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TestVehicles
+comment1.params=brand\ model\ year\ price
+comment1.target=Vehicle(java.lang.String,\ java.lang.String,\ int,\ double)
+comment2.params=
+comment2.target=void\ displayInfo()
+comment3.params=
+comment3.target=void\ startEngine()
+comment4.params=
+comment4.target=void\ stopEngine()
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6
