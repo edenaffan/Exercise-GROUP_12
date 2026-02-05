@@ -72,39 +72,38 @@ public void openTrunk() {
 
 class Motorcycle extends Vehicle {
 
-    // Motorcycle-specific attributes
+    
     private int engineCC;
     private boolean hasHelmetStorage;
 
-    // Constructor
+    
     public Motorcycle(String brand, String model, int year, double price,
                       int engineCC, boolean hasHelmetStorage) {
 
-        // Call parent constructor
+        
         super(brand, model, year, price);
 
-        // Initialize Motorcycle attributes
         this.engineCC = engineCC;
         this.hasHelmetStorage = hasHelmetStorage;
     }
 
-    // Override displayInfo()
+    
     @Override
     public void displayInfo() {
-        // Show parent info first
+   
         super.displayInfo();
 
-        // Add motorcycle info
+        
         System.out.println("Engine CC: " + engineCC);
         System.out.println("Has helmet storage: " + hasHelmetStorage);
     }
 
-    // Motorcycle-specific method: wheelie
+   
     public void wheelie() {
         System.out.println(brand + " " + model + " is doing a wheelie!");
     }
 
-    // Motorcycle-specific method: kickStart
+   
     public void kickStart() {
         System.out.println("Kick starting " + brand + " " + model);
     }
@@ -112,35 +111,35 @@ class Motorcycle extends Vehicle {
 
 class ElectricCar extends Car {
 
-    // ElectricCar-specific attributes
-    private double batteryCapacity; // in kWh
-    private int range; // in km
+   
+    private double batteryCapacity; 
+    private int range; 
 
-    // Constructor
+ 
     public ElectricCar(String brand, String model, int year, double price,
                        int numDoors, String fuelType,
                        double batteryCapacity, int range) {
 
-        // call Car constructor first
+      
         super(brand, model, year, price, numDoors, fuelType);
 
-        // initialize ElectricCar attributes
+      
         this.batteryCapacity = batteryCapacity;
         this.range = range;
     }
 
-    // Override startEngine()
+   
     @Override
     public void startEngine() {
         System.out.println(brand + " " + model + " electric motor activated silently");
     }
 
-    // Method to charge battery
+   
     public void charge() {
         System.out.println("Charging " + brand + " " + model + "... Battery: " + batteryCapacity + " kWh");
     }
 
-    // Method to display battery status
+   
     public void displayBatteryStatus() {
         System.out.println("Battery Capacity: " + batteryCapacity + " kWh");
         System.out.println("Range: " + range + " km");
@@ -151,7 +150,7 @@ class ElectricCar extends Car {
 public class TestVehicles {
     public static void main(String[] args) {
 
-        // -------- Vehicle --------
+       
         Vehicle v = new Vehicle("GenericBrand", "ModelX", 2020, 1000000);
         System.out.println("--- Vehicle ---");
         v.displayInfo();
@@ -160,38 +159,38 @@ public class TestVehicles {
 
         System.out.println();
 
-        // -------- Car --------
+       
         Car c = new Car("Toyota", "Corolla", 2022, 15000000, 4, "Petrol");
         System.out.println("--- Car ---");
-        c.displayInfo();   // overridden
-        c.startEngine();   // inherited
-        c.honk();          // car-specific
-        c.openTrunk();     // car-specific
-        c.stopEngine();    // inherited
+        c.displayInfo();   
+        c.startEngine();   
+        c.honk();          
+        c.openTrunk();     
+        c.stopEngine();    
 
         System.out.println();
 
         // -------- Motorcycle --------
         Motorcycle m = new Motorcycle("Yamaha", "R15", 2023, 12000000, 155, true);
         System.out.println("--- Motorcycle ---");
-        m.displayInfo();   // overridden
-        m.startEngine();   // inherited
-        m.wheelie();       // motorcycle-specific
-        m.kickStart();     // motorcycle-specific
-        m.stopEngine();    // inherited
+        m.displayInfo();   
+        m.startEngine();   
+        m.wheelie();       
+        m.kickStart();     
+        m.stopEngine();    
 
         System.out.println();
 
-        // -------- ElectricCar --------
+       
         ElectricCar ec = new ElectricCar("Tesla", "Model 3", 2023, 50000000, 4, "Electric", 75.0, 500);
         System.out.println("--- ElectricCar ---");
-        ec.displayInfo();           // overridden
-        ec.startEngine();           // overridden
-        ec.charge();                // electric-car specific
-        ec.displayBatteryStatus();  // electric-car specific
-        ec.honk();                  // inherited from Car
-        ec.openTrunk();             // inherited from Car
-        ec.stopEngine();            // inherited from Vehicle
+        ec.displayInfo();           
+        ec.startEngine();           
+        ec.charge();                
+        ec.displayBatteryStatus();  
+        ec.honk();                  
+        ec.openTrunk();             
+        ec.stopEngine();            
     }
 }
 
