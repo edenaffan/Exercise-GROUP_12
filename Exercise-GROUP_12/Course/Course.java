@@ -134,10 +134,10 @@ public class Course {
     }
 
     public static void main(String[] args) {
-        Course course1 = new Course("PT821", "Object-Oriented Programming", 3, 25);
-        course1.assignInstructor("Dr. Smith");
+        Course course1 = new Course("PT821", "OOP", 3, 25);
+        course1.assignInstructor("Dr. Hassan");
         
-        System.out.println("=== Course 1 Initial Info ===");
+        System.out.println(" Course 1 Initial Info ");
         course1.displayCourseInfo();
         
         System.out.println("Enrolling students...");
@@ -153,9 +153,9 @@ public class Course {
         course1.displayCourseInfo();
 
         Course course2 = new Course("CS101", "Introduction to Computer Science", 4, 30);
-        course2.assignInstructor("Prof. Johnson");
+        course2.assignInstructor("Professor. Ibrahim");
         
-        System.out.println("=== Course 2 Initial Info ===");
+        System.out.println(" Course 2 Initial Info ");
         course2.displayCourseInfo();
         
         System.out.println("Filling course to capacity...");
@@ -166,11 +166,11 @@ public class Course {
         }
         course2.displayCourseInfo();
         
-        System.out.println("Attempting to enroll one more student...");
+        System.out.println("enroll one more student...");
         if (course2.enrollStudent()) {
             System.out.println("Enrollment successful");
         } else {
-            System.out.println("Enrollment failed - course is full");
+            System.out.println("Enrollment failed ");
         }
         
         Course course3 = new Course("MATH201", "Calculus II", 4, 20);
