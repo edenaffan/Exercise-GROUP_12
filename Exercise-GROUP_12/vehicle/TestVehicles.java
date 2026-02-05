@@ -170,7 +170,7 @@ public class TestVehicles {
 
         System.out.println();
 
-        // -------- Motorcycle --------
+        
         Motorcycle m = new Motorcycle("Yamaha", "R15", 2023, 12000000, 155, true);
         System.out.println("--- Motorcycle ---");
         m.displayInfo();   
