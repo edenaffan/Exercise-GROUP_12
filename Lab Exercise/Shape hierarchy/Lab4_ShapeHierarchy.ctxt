@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Lab4_ShapeHierarchy
+comment1.params=
+comment1.target=Shape()
+comment2.params=color\ filled
+comment2.target=Shape(java.lang.String,\ boolean)
+comment3.params=
+comment3.target=java.lang.String\ getColor()
+comment4.params=color
+comment4.target=void\ setColor(java.lang.String)
+comment5.params=
+comment5.target=boolean\ isFilled()
+comment6.params=filled
+comment6.target=void\ setFilled(boolean)
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9
