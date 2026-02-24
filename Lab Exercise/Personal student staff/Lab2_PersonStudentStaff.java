@@ -125,12 +125,4 @@ public class Lab2_PersonStudentStaff {
     }
 }
 
-/*
-ANSWERS:
 
-1. super(name, address) initializes the Person attributes.
-2. Java would give a constructor error.
-3. The overridden toString() of each object's class runs.
-4. Because Student is also a Person; checking Person first would always be true.
-5. No. Staff and Student are different subclasses.
-*/
