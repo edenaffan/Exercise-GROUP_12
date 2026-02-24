@@ -118,11 +118,4 @@ public class Lab3_PointMovablePoint {
     }
 }
 
-/*
-ANSWERS:
 
-1. Because x and y are private in Point.
-2. Getters/setters protect data and allow controlled access.
-3. They reference the same object in memory.
-4. Yes — by declaring move() in the Point class (or making it abstract).
-*/
