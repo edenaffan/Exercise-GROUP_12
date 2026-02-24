@@ -193,11 +193,4 @@ public class Lab4_ShapeHierarchy {
     }
 }
 
-/*
-ANSWERS:
 
-1. To keep width and length equal.
-2. The square could become a rectangle.
-3. Because Square is also a Rectangle.
-4. Pros: Reuse code. Cons: Breaks Liskov Substitution Principle because a square behaves differently.
-*/
